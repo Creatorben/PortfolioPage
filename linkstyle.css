@@ -4,18 +4,12 @@
     box-sizing: border-box;
 }
 .slowFade {
-    display: flex;
-    align-items: flex-start;
-    background: #fff;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     overflow: hidden;
-    position: relative;
 }
 .slowFade .slide img {
-    position: absolute;
-    min-width: 100%;
-    min-height: 100%;
-    height: auto;
     background: #000;
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
