@@ -11,30 +11,27 @@
 
 <body>
     <div style="max-height: 100vh;">
-    <div class="slides slowFade">
-        <div class="slide">
-            <img src="./img/Pic (1).jpg" alt="img"/>
-        </div>
-        <div class="slide">
-            <img src="./img/Pic (2).jpg" alt="img"/>
-        </div>
-        <div class="slide">
-            <img src="./img/Pic (3).jpg" alt="img"/>
-        </div>
-        <div class="slide">
-            <img src="./img/Pic (4).jpg" alt="img"/>
-        </div>
-        <div class="slide">
-            <img src="./img/Pic (5).jpg" alt="img"/>
-        </div>
-        <div class="slide">
-            <img src="./img/Pic (6).jpg" alt="img"/>
-        </div>
-        <div class="slide">
-            <img src="./img/Pic (7).jpg" alt="img"/>
+    <div class="slides">
+        <div class="imgbox">
+            <img id="main" src="./img/Pic (1).jpg" alt="img"/>
         </div>
     </div>
 </div>
+<script>
+    let images = ['./img/Pic (1).jpg', './img/Pic (2).jpg', './img/Pic (3).jpg' , './img/Pic (4).jpg', './img/Pic (5).jpg', './img/Pic (6).jpg', './img/Pic (7).jpg'];
+
+let index = 0;
+const imgElement = document.querySelector('#main');
+
+function change() {
+   imgElement.src = images[index];
+   index > 1 ? index = 0 : index++;
+}
+
+window.onload = function () {
+    setInterval(change, 5000);
+};
+</script>
 </body>
 
 </html>
