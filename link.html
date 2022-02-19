@@ -26,11 +26,11 @@ const imgElement = document.querySelector('#main');
 
 function change() {
    imgElement.src = images[index];
-   index > 1 ? index = 0 : index++;
+   index > 6 ? index = 0 : index++;
 }
 
 window.onload = function () {
-    setInterval(change, 5000);
+    setInterval(change, 2000);
 };
 </script>
 </body>
