@@ -11,28 +11,12 @@
 </head>
 
 <body>
-    <div style="max-height: 100vh;">
-    <div class="slides">
-        <div class="imgbox">
-            <img id="main" src="./img/Pic (1).jpg" alt="img"/>
-        </div>
-    </div>
-</div>
-<script>
-    let images = ['./img/Pic (1).jpg', './img/Pic (2).jpg', './img/Pic (3).jpg', './img/Pic (4).jpg', './img/Pic (5).jpg', './img/Pic (6).jpg', './img/Pic (7).jpg'];
+    <script>
+        window.onload = function () {
+            window.location.href = "https://youtu.be/dQw4w9WgXcQ";
+        }
 
-let index = 0;
-const imgElement = document.querySelector('#main');
-
-function change() {
-   imgElement.src = images[index];
-   index > 6 ? index = 0 : index++;
-}
-
-window.onload = function () {
-    setInterval(change, 2000);
-};
-</script>
+    </script>
 </body>
 
 </html>
